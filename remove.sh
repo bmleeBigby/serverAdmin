@@ -4,8 +4,8 @@
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 
-docker rmi jenkins_db
-docker rmi jenkins_php
+docker rmi serveradmin_db
+docker rmi serveradmin_php
 
 /usr/local/bin/docker-compose up -d
 

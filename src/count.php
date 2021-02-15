@@ -6,7 +6,7 @@ if($conn -> connect_errno){
 	exit();
 }
 
-echo("<h1>Total Pegawai</h1><br>");
+echo("<h1>Jumlah Pegawai</h1><br>");
 
 $sql = "SELECT COUNT(id) as jumlah from users";
 $result = $conn->query($sql);
